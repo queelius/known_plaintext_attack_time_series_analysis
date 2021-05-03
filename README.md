@@ -1,4 +1,4 @@
-# stat478_paper
+# Time series analysis of a confidentiality measure for an Encrypted search system
 
 We derive a confidentiality measure against an adversary deploying a known-plaintext attack on the search agents Encrypted searches.
 We perform a time series analysis on a theoretical adversary in order to derive an estimator of the forecast distribution
