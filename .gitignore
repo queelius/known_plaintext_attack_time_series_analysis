@@ -1,0 +1,46 @@
+# LaTeX temporary files
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
+*.fdb_latexmk
+*.fls
+*.bbl
+*.blg
+*.lof
+*.lot
+*.latexml.log
+
+# LaTeXML output
+*.html
+*.css
+LaTeXML.cache/
+
+# R temporary files
+.Rhistory
+.RData
+.Rproj.user
+*.Rproj
+
+# PDF output (keep in repo for now, uncomment if you want to ignore)
+# *.pdf
+
+# Editor temporary files
+*~
+.*.swp
+.*.swo
+\#*\#
+.\#*
+
+# OS temporary files
+.DS_Store
+Thumbs.db
+
+# Python virtual environment
+venv/
+__pycache__/
+*.pyc
+
+# Compressed data files (keep these for now)
+# *.gz
