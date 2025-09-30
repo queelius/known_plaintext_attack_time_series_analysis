@@ -125,6 +125,27 @@ usability and security costs, but delaying them risks unacceptable
 confidentiality loss. Our analysis provides quantitative guidance for
 balancing these competing concerns.
 
+\hypertarget{related-work}{%
+\section{Related work}\label{related-work}}
+
+Searchable encryption was introduced by Song, Wagner, and Perrig~\cite{song2000practical},
+who developed practical techniques for searching on encrypted data while preserving
+query confidentiality. Their foundational work demonstrated that encrypted search
+systems could achieve practical performance, but acknowledged that such systems
+necessarily leak some information through access patterns and query frequencies.
+
+Subsequent research has shown that these information leakages enable significant
+attacks. Islam et al.~\cite{islam2012access} demonstrated access pattern disclosure
+attacks that exploit the deterministic nature of encrypted search schemes. By
+observing which encrypted documents match encrypted queries, an adversary can
+infer plaintext queries even without directly observing query contents. Their
+attack model closely parallels our known-plaintext attack framework: both exploit
+frequency analysis and co-occurrence patterns in the query stream to recover
+plaintext information. While Islam et al. focused on one-time attacks, our work
+extends this perspective by modeling confidentiality degradation as a time series
+process, enabling forecasts of when adversary knowledge will violate security
+thresholds.
+
 \hypertarget{encrypted-search-model}{%
 \section{Encrypted search model}\label{encrypted-search-model}}
 
